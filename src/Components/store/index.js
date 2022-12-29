@@ -70,11 +70,15 @@ const phasetwoSlice= createSlice({
             state.add_on.map((val,index)=>{
                 if(action.payload === val.service){
                     console.log(val.service)
-                    //state.add_on.slice(index,1)
                     return{
                         ...state,
                         add_on:state.add_on.splice(index,1)
 
+                    }
+                }
+                else{
+                    return{
+                        
                     }
                 }
             })

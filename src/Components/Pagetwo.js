@@ -17,7 +17,6 @@ const Pagetwo = () => {
     const ball = document.getElementsByClassName('ball')[0]
   const left = document.getElementsByClassName('left')[0]
   const right = document.getElementsByClassName('right')[0]
-  const style = ball.style.float
   if(!plan === 'monthly'){
     ball.style.float= 'right'
     dispatch(phasetwo.changePlan('yearly'))
