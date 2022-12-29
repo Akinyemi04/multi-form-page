@@ -408,7 +408,6 @@ body{
 @media screen and (max-width:'500px') {
   body{
     margin: 0 0;
-    //overflow-y: scroll;
     height: 50vh;
 
   }
@@ -501,7 +500,6 @@ body{
         }
         span{
           position: absolute;
-          //display: block;
           left: 15vw;
           top: 5vh;
         }
@@ -571,7 +569,6 @@ body{
       background-color: white;
     }
     footer{
-      //margin-top: 25vh;
       background-color:white;
       width: 100vw;
       position: absolute;
@@ -598,7 +595,6 @@ body{
     background-color: white;
     padding: 4vh 6vw;
     footer{
-      //margin-top: 3vh;
       background-color:white;
       width: 100vw;
       position: absolute;
