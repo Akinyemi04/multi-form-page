@@ -407,8 +407,7 @@ body {
 @media screen and (max-width: 500px) {
   body {
     margin: 0 0;
-    overflow-y: scroll;
-    height: 80vh;
+    height: 50vh;
   }
   .App {
     flex-direction: column;
@@ -568,7 +567,7 @@ body {
     width: 100vw;
     position: absolute;
     z-index: 2;
-    bottom: -24vh;
+    bottom: -28vh;
     left: -10vw;
     padding: 3vh 6vw;
     height: 8vh;
@@ -585,7 +584,7 @@ body {
     margin-left: 9vw;
     z-index: 1;
     position: relative;
-    bottom: 6vh;
+    bottom: 12vh;
     background-color: white;
     padding: 4vh 6vw;
   }
@@ -594,7 +593,7 @@ body {
     width: 100vw;
     position: absolute;
     z-index: 2;
-    bottom: -18vh;
+    bottom: -27vh;
     left: -10vw;
     padding: 3vh 6vw;
     height: 8vh;
