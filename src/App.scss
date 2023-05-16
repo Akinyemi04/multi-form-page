@@ -413,6 +413,7 @@ body{
   body{
     margin: 0 0;
     height: 100vh;
+    overflow-y: scroll;
 
   }
   .App{
@@ -515,7 +516,7 @@ body{
     section{
       width: 55vw;
       .switch{
-        width: 60vw;
+        width: 50px;
         padding: 0.65vh 1.5vw;
         border-radius: 5vw;
       }

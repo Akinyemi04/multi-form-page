@@ -412,6 +412,7 @@ body {
   body {
     margin: 0 0;
     height: 100vh;
+    overflow-y: scroll;
   }
   .App {
     flex-direction: column;
@@ -513,7 +514,7 @@ body {
     width: 55vw;
   }
   .Select-plan section .switch {
-    width: 60vw;
+    width: 50px;
     padding: 0.65vh 1.5vw;
     border-radius: 5vw;
   }
