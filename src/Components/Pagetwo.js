@@ -12,7 +12,7 @@ const Pagetwo = () => {
   const dispatch = useDispatch()
   dispatch(home.changeNumber('2'))
   
-
+  const width = window.screen.availWidth
   useEffect(()=>{
     const ball = document.getElementsByClassName('ball')[0]
   const left = document.getElementsByClassName('left')[0]
@@ -60,6 +60,12 @@ const Pagetwo = () => {
      const right = document.getElementsByClassName('right')[0]
      const style = ball.style.transform
      if(style === '' || style==='translateX(0px)'){
+      if( width > 500){
+        ball.style.transform = 'translateX(40px)';
+      }
+      else{
+        ball.style.transform = 'translateX(33px)';
+      }
       ball.style.transform = 'translateX(40px)';
       dispatch(phasetwo.changePlan('yearly'))
       left.style.fontWeight ='400'
