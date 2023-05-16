@@ -514,11 +514,14 @@ body{
       }
     }
     section{
-      width: 55vw;
+      width: 70vw;
       .switch{
-        width: 50px;
+        width: 80px;
         padding: 0.65vh 1.5vw;
         border-radius: 5vw;
+      }
+      .left{
+        margin-left: 3vw;
       }
     }
     

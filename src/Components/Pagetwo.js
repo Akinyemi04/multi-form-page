@@ -64,7 +64,7 @@ const Pagetwo = () => {
         ball.style.transform = 'translateX(40px)';
       }
       else{
-        ball.style.transform = 'translateX(30px)';
+        ball.style.transform = 'translateX(45px)';
       }
       ball.style.transform = 'translateX(40px)';
       dispatch(phasetwo.changePlan('yearly'))
