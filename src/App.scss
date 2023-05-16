@@ -47,6 +47,9 @@ body{
         font-size: small;
         margin-bottom: 0.5vh;
       }
+      p{
+        white-space: nowrap;
+      }
     }
   }
  }
@@ -80,6 +83,7 @@ body{
       font-weight: 500;
       height: 6.5vh;
       font-size: 16px;
+      padding-left: 5px;
       padding: 0 1vw;
       border: 1px solid grey;
     }
@@ -176,11 +180,12 @@ body{
     background-color:hsl(231, 100%, 99%);
     .switch{
       cursor: pointer;
-      width: 5vw;
+      width:72px;
       height: 4vh;
       border-radius: 2vw;
       margin-left: 1.2vw;
       margin-right: 1.2vw;
+      position: relative;
       background-color: hsl(213, 96%, 18%);
       padding: 0.65vh 0.4vw;
 
@@ -189,9 +194,8 @@ body{
         height: 20px;
         background-color: white;
         z-index: 1;
-        float:left;
         border-radius: 50%;
-        transition: float 1s ease-in;
+        transition: 0.4s
       }
       
     }
@@ -408,8 +412,8 @@ body{
 @media screen and (max-width:'500px') {
   body{
     margin: 0 0;
-    overflow-y: scroll;
-    height: 50vh;
+    overflow-y: hidden;
+    height: 100vh;
 
   }
   .App{
@@ -427,7 +431,7 @@ body{
       background-color:white;
       .hidden{
         position: absolute;
-        bottom: -30vh;
+        bottom: -26vh;
         right: -10vw;
         display: block;
         height: 12vh;
@@ -435,7 +439,7 @@ body{
         background-color: white;
       }
       button{
-        bottom: -26vh;
+        bottom: -23vh;
         font-size: 16px;
         border-radius: 2vw;
         z-index: 2;

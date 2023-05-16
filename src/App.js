@@ -64,7 +64,7 @@ else{
   },[display])
   return (
     <div className="App">
-      <BrowserRouter className='App'>
+      <BrowserRouter>
       <aside className='side'>
           <div className="number">
             <span className="active one">1</span>

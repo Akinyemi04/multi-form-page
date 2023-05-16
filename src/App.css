@@ -8,14 +8,14 @@
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 10vh 13vw;
-  background-color: hsl(217deg, 100%, 97%);
+  background-color: hsl(217, 100%, 97%);
   overflow: hidden;
 }
 
 .App {
   display: flex;
   padding: 3vh 1.5vw;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 1.5vw;
 }
 .App .side {
@@ -47,9 +47,12 @@ body {
   color: white;
 }
 .App .side .number .aside .small {
-  color: hsl(229deg, 24%, 87%);
+  color: hsl(229, 24%, 87%);
   font-size: small;
   margin-bottom: 0.5vh;
+}
+.App .side .number .aside p {
+  white-space: nowrap;
 }
 .App .home {
   display: flex;
@@ -83,6 +86,7 @@ body {
   font-weight: 500;
   height: 6.5vh;
   font-size: 16px;
+  padding-left: 5px;
   padding: 0 1vw;
   border: 1px solid grey;
 }
@@ -105,7 +109,7 @@ body {
   right: 0.5vw;
   padding: 2vh 4vw;
   color: white;
-  background-color: hsl(213deg, 96%, 18%);
+  background-color: hsl(213, 96%, 18%);
   border-radius: 0.5vw;
   border: none;
   cursor: pointer;
@@ -134,7 +138,7 @@ body {
   margin-right: 2vw;
   border-radius: 1vw;
   width: 11.5vw;
-  border: 1px solid hsl(220deg, 8%, 85%);
+  border: 1px solid hsl(220, 8%, 85%);
   transition: all 0.4s ease-in;
   cursor: pointer;
 }
@@ -151,23 +155,23 @@ body {
   margin-top: 6vh;
   font-weight: 700;
   font-size: 18px;
-  color: hsl(213deg, 96%, 18%);
+  color: hsl(213, 96%, 18%);
   margin-bottom: 1vh;
   pointer-events: none;
 }
 .Select-plan main .option span {
   margin-left: 1vw;
   margin-bottom: 1vh;
-  color: hsl(231deg, 11%, 63%);
+  color: hsl(231, 11%, 63%);
   pointer-events: none;
 }
 .Select-plan main .option .last {
   font-size: small;
-  color: hsl(213deg, 96%, 18%);
+  color: hsl(213, 96%, 18%);
   font-weight: 700;
 }
 .Select-plan main .option:hover {
-  border: 1px solid hsl(228deg, 100%, 84%);
+  border: 1px solid hsl(228, 100%, 84%);
 }
 .Select-plan section {
   display: flex;
@@ -176,16 +180,17 @@ body {
   padding-top: 1.8vh;
   border-radius: 0.6vw;
   height: 7vh;
-  background-color: hsl(231deg, 100%, 99%);
+  background-color: hsl(231, 100%, 99%);
 }
 .Select-plan section .switch {
   cursor: pointer;
-  width: 5vw;
+  width: 72px;
   height: 4vh;
   border-radius: 2vw;
   margin-left: 1.2vw;
   margin-right: 1.2vw;
-  background-color: hsl(213deg, 96%, 18%);
+  position: relative;
+  background-color: hsl(213, 96%, 18%);
   padding: 0.65vh 0.4vw;
 }
 .Select-plan section .switch p {
@@ -193,9 +198,8 @@ body {
   height: 20px;
   background-color: white;
   z-index: 1;
-  float: left;
   border-radius: 50%;
-  transition: float 1s ease-in;
+  transition: 0.4s;
 }
 .Select-plan section .left {
   margin-top: 0.6vh;
@@ -210,14 +214,14 @@ body {
 }
 .Select-plan footer .back {
   text-decoration: none;
-  color: hsl(231deg, 11%, 63%);
+  color: hsl(231, 11%, 63%);
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
 }
 .Select-plan footer .next {
   float: right;
-  background-color: hsl(213deg, 96%, 18%);
+  background-color: hsl(213, 96%, 18%);
   text-decoration: none;
   font-size: 16px;
   color: white;
@@ -245,7 +249,7 @@ body {
   margin-top: 4vh;
 }
 .add-ons section div {
-  border: 1px solid hsl(217deg, 100%, 97%);
+  border: 1px solid hsl(217, 100%, 97%);
   margin-bottom: 2vh;
   position: relative;
   min-height: 10.5vh;
@@ -263,7 +267,7 @@ body {
   top: 3.8vh;
   justify-content: center;
   height: 25px;
-  border: 1px solid hsl(217deg, 100%, 97%);
+  border: 1px solid hsl(217, 100%, 97%);
   transition: background-color 0.5s ease;
   border-radius: 0.3vw;
 }
@@ -278,7 +282,7 @@ body {
   position: absolute;
   right: 2vw;
   top: 4vh;
-  color: hsl(243deg, 100%, 62%);
+  color: hsl(243, 100%, 62%);
   font-size: 17px;
 }
 .add-ons footer {
@@ -286,14 +290,14 @@ body {
 }
 .add-ons footer .back {
   text-decoration: none;
-  color: hsl(231deg, 11%, 63%);
+  color: hsl(231, 11%, 63%);
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
 }
 .add-ons footer .next {
   float: right;
-  background-color: hsl(213deg, 96%, 18%);
+  background-color: hsl(213, 96%, 18%);
   text-decoration: none;
   font-size: 16px;
   color: white;
@@ -321,7 +325,7 @@ body {
   border-radius: 1.5vw;
   min-height: 30vh;
   padding: 3vh 2vw;
-  background-color: hsl(231deg, 100%, 99%);
+  background-color: hsl(231, 100%, 99%);
 }
 .summary main section .pricing {
   color: black;
@@ -341,7 +345,7 @@ body {
 }
 .summary main section .link {
   margin-left: 0.4vw;
-  color: hsl(228deg, 100%, 84%);
+  color: hsl(228, 100%, 84%);
 }
 .summary main section .list {
   margin-top: 2.5vh;
@@ -355,7 +359,7 @@ body {
 .summary main hr {
   margin-top: 4vh;
   margin-bottom: 2vh;
-  border: 1px solid hsl(240deg, 7%, 92%);
+  border: 1px solid hsl(240, 7%, 92%);
 }
 .summary .underx {
   margin-top: 3vh;
@@ -363,7 +367,7 @@ body {
 }
 .summary .underx .right {
   float: right;
-  color: hsl(243deg, 100%, 62%);
+  color: hsl(243, 100%, 62%);
   font-size: 19px;
   font-weight: 600;
 }
@@ -372,14 +376,14 @@ body {
 }
 .summary footer .back {
   text-decoration: none;
-  color: hsl(231deg, 11%, 63%);
+  color: hsl(231, 11%, 63%);
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
 }
 .summary footer .next {
   float: right;
-  background-color: hsl(213deg, 96%, 18%);
+  background-color: hsl(213, 96%, 18%);
   text-decoration: none;
   font-size: 16px;
   color: white;
@@ -401,14 +405,14 @@ body {
   margin: 3vh 0;
 }
 .checkout p {
-  color: hsl(231deg, 11%, 63%);
+  color: hsl(231, 11%, 63%);
 }
 
 @media screen and (max-width: 500px) {
   body {
     margin: 0 0;
-    overflow-y: scroll;
-    height: 50vh;
+    overflow-y: hidden;
+    height: 100vh;
   }
   .App {
     flex-direction: column;
@@ -427,7 +431,7 @@ body {
   }
   .App .home .hidden {
     position: absolute;
-    bottom: -30vh;
+    bottom: -26vh;
     right: -10vw;
     display: block;
     height: 12vh;
@@ -435,7 +439,7 @@ body {
     background-color: white;
   }
   .App .home button {
-    bottom: -26vh;
+    bottom: -23vh;
     font-size: 16px;
     border-radius: 2vw;
     z-index: 2;
